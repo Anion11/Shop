@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Корзина</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="scriptBasket.js"></script>
+	</head>
+	<body>
+
+		<header>
+			<div class="head">
+				<div class="logo">
+					<a href="index.html" id="QPICK">QPICK</a>
+				</div>
+				<nav>
+					<a class="Favorite" href="#"><img id="Favorite" src="images/Favorite.png"></a>
+					<a class="Basket" href="Basket.html"><div class="counterBasket"><span id="counterBasket"></span></div><img id="Basket" src="images/Basket.png"></a>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<span class="containerText">Корзина</span>
+				<div class="container_basket">
+					<div class="container_basket_content"></div>
+					<div class="result">
+						<div class="cost">
+							<span style="display: inline-block;margin-top: 22px; margin-left:22px;">ИТОГО</span>
+							<span id="price"></span>
+							<a class="decoration" href="#">
+								<div class="dec">
+									Перейти к оформлению
+								</div>	
+							</a>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="footer">
+				<div class="footerlogo">
+					<span id="QPICK">QPICK</span>
+				</div>
+				<div class="footernav">
+					<a href="#">
+						Избранное
+					</a>
+					<br>
+					<a href="Basket.html">
+						Корзина
+					</a>
+					<br>
+					<a href="#">
+						Контакты
+					</a>
+				</div>
+				<div class="footernav2">
+					<a href="#">
+						Условия сервиса
+					</a>
+					<div class="lang_content">
+						<img id="lang" src="images/Lang.png">
+						<a href="#" class="lang" id="kuz" onclick="ChangeLang(this);" >
+							Каз
+						</a>
+						<a href="#" class="lang" id="rus" onclick="ChangeLang(this);" >
+							Рус
+						</a>
+						<a href="#" class="lang" id="eng" onclick="ChangeLang(this);">
+							Eng
+						</a>
+					</div>
+				</div>
+				<div class="feedback">
+					<a href="#"><img id="feedback_img_vk" src="images/VK.png"></a>
+					<a href="#"><img id="feedback_img_telegram" src="images/Telegram.png"></a>
+					<a href="#"><img id="feedback_img_whatsapp" src="images/Whatsapp.png"></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
